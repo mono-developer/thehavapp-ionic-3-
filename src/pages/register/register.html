@@ -1,0 +1,58 @@
+<ion-content class="pageMainBg">
+    
+  <div class="screenTitle">
+    <a (click)="back()" ><img src="assets/imgs/arrowBack.png" alt="Image"></a>
+    CREATE AN ACCOUNT
+  </div>
+
+  <div class="logoWrap" (click)="setAddress()">
+    <img src="assets/imgs/mainlogo.png" alt="Image">
+  </div>
+
+  <div class="loginForm">
+    <form [formGroup]="signUpForm">
+      <input type="text" class="fullName" formControlName="given_name" placeholder="First Name" [(ngModel)]="data.given_name">
+      <div *ngIf="!signUpForm.controls.given_name.valid  && (signUpForm.controls.given_name.dirty || submitAttempt)">
+        <p class="note danger">First Name is required</p>
+      </div>
+
+      <input type="text" class="fullName" formControlName="family_name" placeholder="Last Name" [(ngModel)]="data.family_name">
+      
+      <div class="address" >
+        <!-- <input type="text" class="locationIcon" formControlName="address" placeholder="Location/Address" [(ngModel)]="data.address" disabled="true" (ionChanged)="setAddress()">   -->
+        <img src="assets/imgs/locationIcon.png">
+        <input type="text" class="address_input" formControlName="address" placeholder="Location/Address" [(ngModel)]="data.address">  
+        <img class="nav_arrow" src="assets/icon/nav_arrow.png" (click)="setAddress()">
+       <!--  <p *ngIf="!data.address" style="color: lightgray;">Location/Address</p>
+        <p *ngIf="data.address" style="color: #333;">{{data.address}}</p> -->
+      </div>
+      <div *ngIf="">
+        <p class="note danger">Address is required</p>
+      </div>
+      
+      <!-- <ion-searchbar class="searchbar locationIcon" #searchbar formControlName="address" placeholder="Location/Address"  [(ngModel)]="data.address"></ion-searchbar>
+      <div *ngIf="!signUpForm.controls.address.valid  && (signUpForm.controls.address.dirty || submitAttempt)">
+        <p class="note danger">Address is required</p>
+      </div> -->
+      
+      <input type="text" class="emailIcon" formControlName="email" placeholder="Email Address" [(ngModel)]="data.email">
+      <div *ngIf="!signUpForm.controls.email.valid  && (signUpForm.controls.email.dirty || submitAttempt)">
+        <p class="note danger">You must supply valid e-mail</p>
+      </div>
+      
+      <hr>
+      <input type="text" class="uname" formControlName="username" placeholder="Enter Username" [(ngModel)]="data.username">
+      <div *ngIf="!signUpForm.controls.username.valid  && (signUpForm.controls.username.dirty || submitAttempt)">
+        <p class="note danger">You must supply valid username</p>
+      </div>
+
+      <input type="password" class="pass" formControlName="password" placeholder="Enter Password" [(ngModel)]="data.password">
+      <div *ngIf="!signUpForm.controls.password.valid  && (signUpForm.controls.password.dirty || submitAttempt)">
+        <p class="note danger">Password: min 6 characters, with uppercase letter, lowercase letter and number</p>
+      </div>
+
+      <button (click)="submit()" >SUBMIT</button>
+    </form>
+  </div>  
+  
+</ion-content>

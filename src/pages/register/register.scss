@@ -1,0 +1,43 @@
+.loginForm {
+    .note.danger {
+        margin-top: 0;
+        margin-bottom: 32px;
+        margin-left: 55px;
+        color: #d14;
+    }
+
+    .searchbar{
+    	width: 100%;
+  		border: 0;
+  		padding: 0;
+  		margin-bottom: 10px;
+  		border-radius: 10px;
+  		height: 55px;
+  		margin-top: 5px;
+  		background-color: transparent;
+    }
+    .searchbar-input-container {
+
+    }
+    .address{
+      height: 56px;
+      width: 100%;
+      background-color: white;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      display: flex;
+      img{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .address_input{
+        padding: 5px 10px;
+        margin: 0;
+      }
+      .nav_arrow {
+        padding: 10px 5px;
+        width: 45px;
+        height: 100%;
+      }
+    }
+}

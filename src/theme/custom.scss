@@ -1,0 +1,602 @@
+
+/*************************
+******* FONT FACE ********
+*************************/
+
+@font-face {
+    font-family: 'TradeGothicLTBold';
+    src: url('../assets/fonts/TradeGothicLTBold.eot');
+    src: url('../assets/fonts/TradeGothicLTBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/TradeGothicLTBold.woff2') format('woff2'),
+         url('../assets/fonts/TradeGothicLTBold.woff') format('woff'),
+         url('../assets/fonts/TradeGothicLTBold.ttf') format('truetype'),
+         url('../assets/fonts/TradeGothicLTBold.svg#TradeGothicLTBold') format('svg');
+  }
+  
+/**************************
+********* GENERAL *********
+**************************/
+
+ion-content{
+  font-family      : 'TradeGothicLTBold' , Helvetica, Arial, sans-serif;
+  font-size        : 16px;
+  line-height      : 1.42857143;
+  color            : #fff;
+  background       : #e5e5e5;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family       : inherit;
+  font-size         : inherit;
+  line-height       : inherit;
+}
+
+input,
+textarea{
+  font-family         : 'Titillium Web';
+}
+
+a {
+  color             : #fff;
+  text-decoration   : none;
+  transition        : all 0.3s ease 0s;
+}
+
+a:hover,
+a:focus {
+  color              : #333;
+  text-decoration    : none;
+}
+
+::placeholder{
+  color               : #b9b9b9;
+}
+
+h1,
+h2,
+h3 {
+  display             : block;
+  font-size           : 2em;
+  padding             : 0;
+  margin              : 0;
+  font-weight         : normal;
+  color               : #333;
+}
+
+h2 {
+  font-size           : 1.5em;
+}
+
+h3 {
+  font-size           : 1.17em;
+}
+
+h4 {
+  font-size           : 1em;
+}
+
+
+h5 {
+  font-size           : .83em;
+}
+
+/**************************
+********** GLOBAL *********
+**************************/
+.logoutWrp{
+  padding-bottom      : 60px;
+}
+
+.logoutWrp h1{
+  padding             : 0 30px;
+}
+
+.logout{
+  display             : inline-block;
+  text-align          : center;
+  text-decoration     : none;
+  color               : #fff;
+  background          : #867162;
+  border-radius       : 5px;
+  padding             : 3px 20px 8px;
+  margin-top          : 10px;
+  font-weight         : normal;
+  font-family         : 'Titillium Web';
+}
+
+.logout:hover{
+  background          : #f87664;
+  color               : #fff;
+}
+
+.pageMainBg{
+  background          : #2ac6da url("../assets/imgs/mainBg.jpg") top center no-repeat;
+  max-width           : 414px;
+  margin              : 0 auto;
+  display             : block;
+}
+
+.clear{
+  clear               : both;
+}
+
+.screenTitle{
+  border-bottom       : 1px solid #fff;
+  font-size           : 25px;
+  text-transform      : uppercase;
+  padding             : 20px 0 10px;
+  margin              : 0 20px 20px;
+  text-align          : center;
+  position            : relative;
+  color               : #fff;
+}
+
+.screenTitle a{
+  position            : absolute;
+  left                : 0;
+  top                 : 16px
+}
+
+.logoWrap{
+  width               : 149px;
+  margin              : 0 auto;
+}
+
+.gmnoprint .gm-style-mtc{
+  top                 : 50px!important;
+}
+
+
+/**************************
+********** LOGIN **********
+**************************/
+
+.loginForm {
+  padding             : 20px;
+}
+
+.loginForm input,
+.loginForm button{
+  width               : 100%;
+  border              : 0;
+  padding             : 13px 10px 15px 65px;
+  margin-bottom       : 10px;
+  border-radius       : 10px;
+  color               : #333;
+  font-family         : 'Titillium Web';
+  font-size           : 18px;
+}
+
+
+.uname{
+  background          : #fff url("../assets/imgs/userIcon.png") left no-repeat;
+}
+
+.pass{
+  background          : #fff url("../assets/imgs/passIcon.png") left no-repeat;
+}
+
+
+.loginForm button{
+  width               : 100%;
+  padding             : 15px 0;
+  font-family         : 'TradeGothicLTBold';
+  font-size           : 20px;
+  transition          : all 0.3s ease 0s;
+  color               : #fff;
+  background          : #968980;
+  background          : -moz-linear-gradient(top, #968980 1%, #8f7e71 51%, #867162 51%, #95887f 100%);
+  background          : -webkit-linear-gradient(top, #968980 1%,#8f7e71 51%,#867162 51%,#95887f 100%);
+  background          : linear-gradient(to bottom, #968980 1%,#8f7e71 51%,#867162 51%,#95887f 100%);
+  filter              : progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr='#968980',
+                        endColorstr='#95887f',
+                        GradientType=0 );
+}
+
+.loginForm button:hover{
+  opacity             : 0.9;
+}
+
+.creatAccnt{
+  text-align          : center;
+  display             : block;
+  font-size           : 20px;
+  margin-bottom       : 20px;
+  color               : #fff;
+}
+
+
+.commectSM{
+  text-align          : center;
+  padding-bottom      : 40px;
+}
+
+.commectSM img{
+  margin-bottom       : 20px;
+}
+
+.commectSM a img{
+  margin-bottom       : 5px;
+}
+
+/***********************************
+********** CREATE ACCOUNT **********
+***********************************/
+
+.fullName{
+  background          : #fff url("../assets/imgs/nameIcon.png") left no-repeat;
+}
+
+.locationIcon{
+  background          : #fff url("../assets/imgs/locationIcon.png") left no-repeat;
+}
+
+.emailIcon{
+  background          : #fff url("../assets/imgs/emailIcon.png") left no-repeat;
+}
+
+
+/******************************
+********** DASHBOARD **********
+******************************/
+
+.dashboardScrn{
+  position            : relative;
+}
+
+.nameHolder{
+  background          : #fff;
+  display             : block;
+  padding             : 20px 0;
+  margin              : 0 40px;
+  position            : relative;
+  z-index             : 1;
+  text-align          : center;
+}
+
+.nameHolder h1{
+  color               : #45c7c1;
+}
+
+.instructionTitle{
+  background          : #1697a9 url("../assets/imgs/arrowDown.png") top center no-repeat;
+  border-bottom       : 1px solid #fff;
+  padding             : 20px 40px;
+  margin              : 0 20px;
+  color               : #fff;
+  font-size           : 20px;
+  text-align          : center;
+}
+
+ul.intructionList{
+  margin              : 0 20px;
+  padding             : 0;
+}
+
+ul.intructionList li{
+  background          : #f87664 url("../assets/imgs/arrowWhite.png") 15px 28px no-repeat;
+  list-style          : none;
+  color               : #fff;
+  padding             : 10px 20px 10px 55px;
+  border-bottom       : 1px solid #fff;
+  font-family         : 'Titillium Web';
+}
+
+ul.intructionList li:last-child{
+  border              : 0;
+  margin-bottom       : 10px; 
+}
+
+.btn{
+  width               : 100%;
+  border-radius       : 0;
+  padding             : 15px 0;
+  font-family         : 'TradeGothicLTBold';
+  font-size           : 20px;
+  transition          : all 0.3s ease 0s;
+  color               : #fff;
+  background          : #968980;
+  background          : -moz-linear-gradient(top, #968980 1%, #8f7e71 51%, #867162 51%, #95887f 100%);
+  background          : -webkit-linear-gradient(top, #968980 1%,#8f7e71 51%,#867162 51%,#95887f 100%);
+  background          : linear-gradient(to bottom, #968980 1%,#8f7e71 51%,#867162 51%,#95887f 100%);
+  filter              : progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr='#968980',
+                        endColorstr='#95887f',
+                        GradientType=0 );
+}
+
+.edit a{
+  position            : absolute;
+  padding             : 6px 12px 8px;
+  background          : #A8CC62;
+  border-radius       : 50%;
+  color               : #fff;
+  z-index             : 999999;
+  left                : 65%;
+  top                 : 24%;
+}
+
+.edit a:hover{
+  background          : #F87664;
+}
+
+
+.homie{
+  position            : relative;
+  z-index             : 9999;
+  text-align          : center;
+}
+
+/*****************************************
+********** ADDRESS VERIFICATION **********
+*****************************************/
+
+#map {
+  width               : 90%;
+  height              : 300px;
+  margin              : 0 auto;
+  margin-bottom       : 10px; 
+}
+
+.searchbar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pac-card {
+  margin              : 10px 10px 0 0;
+  border-radius       : 2px 0 0 2px;
+  box-sizing          : border-box;
+  -moz-box-sizing     : border-box;
+  outline             : none;
+  box-shadow          : 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color    : #fff;
+}
+
+#pac-container {
+  padding-bottom      : 12px;
+  margin-right        : 12px;
+}
+
+.pac-controls {
+  display             : inline-block;
+  padding             : 5px 11px;
+}
+
+.pac-controls label {
+  font-size           : 13px;
+  font-weight         : 300;
+}
+
+#pac-input {
+  background          : #fff url("../assets/imgs/searchIcon.jpg") center left no-repeat;
+  color               : #333;
+  font-size           : 15px;
+  font-weight         : 300;
+  margin              : 0;
+  padding             : 10px 10px 11px 60px;
+  text-overflow       : ellipsis;
+  width               : 100%;
+  left                : 0!important;
+  border              : 0;
+  z-index             : 9999!important;
+  border-bottom       : 5px solid #41C7BE;
+}
+
+#pac-input:focus {
+  border-color        : #4d90fe;
+}
+
+#target {
+  width               : 345px;
+}
+
+
+/*************************************************
+********** ADDRESS CONFIRMATION MESSAGE **********
+*************************************************/
+
+.instructionTitle h1{
+  color               : #fff;
+}
+
+.textConfirm{
+  background          : #f87664;
+  text-align          : center;
+  color               : #fff;
+  font-size           : 23px;
+  margin              : 0 20px;
+  padding             : 30px 40px;
+}
+
+/**********************************
+********** CAPTURE PHOTO **********
+**********************************/
+
+.captureWrp{
+  margin              : 0 20px;
+}
+
+.captureWrp span{
+  background          : #f87664;
+  text-align          : center;
+  color               : #fff;
+  font-size           : 25px;
+  display             : block;
+  padding             : 15px 0;
+}
+.captureButton{
+  width               : 90%;
+  margin              : 0 auto;
+  margin-bottom       : 10px;
+  display             : block;
+  text-align          : center;
+  border-radius       : 10px;
+  padding             : 15px 0;
+  font-family         : 'TradeGothicLTBold';
+  font-size           : 20px;
+  transition          : all 0.3s ease 0s;
+  color               : #fff;
+  background          : #968980;
+  background          : -moz-linear-gradient(top, #968980 1%, #8f7e71 51%, #867162 51%, #95887f 100%);
+  background          : -webkit-linear-gradient(top, #968980 1%,#8f7e71 51%,#867162 51%,#95887f 100%);
+  background          : linear-gradient(to bottom, #968980 1%,#8f7e71 51%,#867162 51%,#95887f 100%);
+  filter              : progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr='#968980',
+                        endColorstr='#95887f',
+                        GradientType=0 );
+}
+
+
+/*******************************
+********** ADD PHOTOS **********
+*******************************/
+
+.photoWrp{
+  margin              : 10px 20px 10px;
+  padding             : 15px;
+  background          : #e9eaee;
+}
+
+.photoAlbum{
+  margin-bottom       : 60px;
+}
+
+.photoHolder{
+  float               : left;
+  width               : 84px;
+  margin-right        : 10px;
+}
+
+.photoHolder img{
+  width               : 100%;
+  height              : 100%;
+}
+
+.dscrptWrp{
+  float               : left;
+  width               : 71%;
+}
+
+.dscrptWrp input{
+  width               : 100%;
+  padding             : 5px 10px;
+  border              : 1px solid #d0d1cc;
+  display             : block;
+  color               : #333;
+}
+
+.dscrptWrp a{
+  display             : block;
+  text-decoration     : none;
+  text-align          : center;
+  padding             : 8px 0;
+  color               : #fff;
+  background          : #f87664;
+  margin-top          : 5px;
+}
+
+.dscrptWrp a:hover{
+  background          : #f87664;
+}
+
+
+.btn-addmore{
+  width               : 90%;
+  margin              : 0 auto;
+  display             : block;
+  text-align          : center;
+  border-radius       : 10px;
+  padding             : 15px 0;
+  font-family         : 'TradeGothicLTBold';
+  font-size           : 20px;
+  transition          : all 0.3s ease 0s;
+  color               : #fff;
+  background          : #fa8675;
+  background          : -moz-linear-gradient(top, #fa8675 50%, #f87664 50%, #fa8575 100%);
+  background          : -webkit-linear-gradient(top, #fa8675 50%,#f87664 50%,#fa8575 100%);
+  background          : linear-gradient(to bottom, #fa8675 50%,#f87664 50%,#fa8575 100%);
+  filter              : progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr='#fa8675',
+                        endColorstr='#fa8575',
+                        GradientType=0 );
+}
+
+.btn-addmore:hover{
+  opacity             : 0.9;
+  color               : #fff;
+}
+
+
+
+/******************************************
+********** ADD PROPERTY COMMENTS **********
+******************************************/
+
+.commentsWrp{
+  margin              : 40px 20px 0;
+  display             : block;
+}
+
+
+.commentsWrp label{
+  display             : block;
+  font-size           : 20px;
+  font-weight         : normal;
+  color               : #fff; 
+  margin-bottom       : 10px;
+}
+
+.commentsWrp textarea{
+  padding             : 5px 10px;
+  border              : 1px solid #d0d1cc;
+  display             : block;
+  width               : 100%;
+  color               : #333;
+}
+
+.btn-comment{
+  width               : 90%;
+  margin              : 0 auto;
+  margin-top          : 10px; 
+  display             : block;
+  text-align          : center;
+  border-radius       : 10px;
+  padding             : 15px 0;
+  font-family         : 'TradeGothicLTBold';
+  font-size           : 20px;
+  transition          : all 0.3s ease 0s;
+  color               : #fff;
+  background          : #fa8675;
+  background          : -moz-linear-gradient(top, #fa8675 50%, #f87664 50%, #fa8575 100%);
+  background          : -webkit-linear-gradient(top, #fa8675 50%,#f87664 50%,#fa8575 100%);
+  background          : linear-gradient(to bottom, #fa8675 50%,#f87664 50%,#fa8575 100%);
+  filter              : progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr='#fa8675',
+                        endColorstr='#fa8575',
+                        GradientType=0 );
+}
+
+
+/*********************************
+********** SUCCESS PAGE **********
+*********************************/
+
+.successWrp{
+  padding-bottom: 50px;
+}
+
+.successWrp .nameHolder h1{
+  font-size           : 50px;
+  background          : url("../assets/imgs/greenCheck.png") 25px 5px no-repeat;
+  color               : #128e57;
+  padding-left        : 40px;
+}
+
+.successWrp .instructionTitle h3{
+  color               : #fff;
+}

@@ -1,0 +1,36 @@
+<ion-content class="pageMainBg">
+  
+  <div class="screenTitle">Login</div>
+  
+  <div class="logoWrap">
+      <img src="assets/imgs/mainlogo.png" alt="Image">
+  </div>
+
+  <div class="loginForm">
+    <form [formGroup]="signInForm">
+      <input type="text" class="uname" name="uname" placeholder="Enter Username" formControlName="username" [(ngModel)]="data.username">
+      <div *ngIf="!signInForm.controls.username.valid  && (signInForm.controls.username.dirty || submitAttempt)">
+        <p class="note danger">Please type your username</p>
+      </div>
+
+      <input type="password" class="pass" name="password" placeholder="Enter Password" formControlName="password" [(ngModel)]="data.password">
+      <div *ngIf="!signInForm.controls.password.valid  && (signInForm.controls.password.dirty || submitAttempt)">
+        <p class="note danger">Please type your valid password</p>
+      </div>
+
+      <button (click)="login()" >LOGIN</button>
+    </form>
+  </div>
+
+  <p *ngIf="fbuserData">{{fbuserData.username}}</p>
+  <a (click)="register()" class="creatAccnt" >Create An Account?</a>
+  
+  <div class="commectSM">
+    <img src="assets/imgs/or.png" alt="Image">
+    <a (click)="logintoFB()" ><img src="assets/imgs/facebookConnect.png" alt="Image"></a>
+    <a (click)="logintoGP()" ><img src="assets/imgs/googleConnect.png" alt="Image"></a>
+  </div>
+
+  
+  
+</ion-content>

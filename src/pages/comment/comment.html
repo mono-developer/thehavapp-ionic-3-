@@ -1,0 +1,16 @@
+<ion-content class="pageMainBg">
+  <div class="dashboardScrn">
+      <div class="screenTitle">
+        <a (click)="back()" ><img src="assets/imgs/arrowBack.png" alt="Image"></a>
+        ADD PROPERTY COMMENTS
+      </div>
+
+      <div class="commentsWrp">
+        <label>Additional Comment About the Property</label>
+        <textarea name="add-comment" id="add-comment" cols="30" rows="15" placeholder="Add Comments Here" [(ngModel)]="comment"></textarea>
+      </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <button (click)="submit()" class="btn">SUBMIT</button>  
+</ion-footer>

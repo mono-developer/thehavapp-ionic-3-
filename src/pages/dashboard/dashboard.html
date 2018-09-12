@@ -1,0 +1,28 @@
+<ion-content class="pageMainBg">
+  <div class="dashboardScrn">
+      <div class="screenTitle">DASHBOARD</div>
+
+      <div class="homie"><img src="assets/imgs/homie.png" alt="Image"></div>
+
+      <div class="nameHolder">
+        <h2>Welcome</h2>
+        <h1>{{ given_name }} {{ family_name }}</h1>
+        <a (click)="logout()" class="logout">Logout</a>
+      </div>
+
+      <div class="instructionTitle">
+        Below are the instructions on how to use this app.
+      </div>
+
+      <ul class="intructionList">
+        <li>Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus id auctor magna donec in lobortis urna.</li>
+        <li>Aenean non ante id lectus vulputate faucibus hasellus sollicitudin justo at velit vehicula eget pretium nulla sollicitudin. </li>
+        <li>Petsum dolor sit amet consectetur adipiscing elit phasellus id auctor magna donec.</li>
+        <li>Dolor sit amet consectetur adipiscing elit phasellus id auctor magna donec in lobor lectus vulputate faucibus hasellus.</li>
+      </ul>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <button   (click)="continue()" class="btn">CONTINUE</button>  
+</ion-footer>

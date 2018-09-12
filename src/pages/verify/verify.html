@@ -1,0 +1,29 @@
+<ion-content class="pageMainBg">
+  <div class="dashboardScrn">
+    <div class="screenTitle">ADDRESS VERIFICATION</div>
+
+    <div class="homie"><img src="assets/imgs/homie.png" alt="Image"></div>
+
+    <div class="nameHolder">
+      <h1>{{ given_name }} {{ family_name }}</h1>
+      <a (click)="logout()" class="logout">Logout</a>
+    </div>
+
+    <!-- <div class="instructionTitle">
+      Before we proceed may we ask your location/address
+    </div> -->
+
+    <div class="address">
+      <p>Address: <span>{{full_address}}</span></p>
+      <p>Latitude: <span>{{lat}}</span></p>
+      <p>Longitude: <span>{{lng}}</span></p>
+      <p>Accuracy: <span>{{accuracy}}</span>m</p>
+    </div>
+    <ion-searchbar class="searchbar" #searchbar placeholder="Search Address"></ion-searchbar>
+    <div #map id="map"></div>
+
+  </div>
+</ion-content>
+<ion-footer>
+  <button (click)="continue()" class="btn">Continue</button>  
+</ion-footer>

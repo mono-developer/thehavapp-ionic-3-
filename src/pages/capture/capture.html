@@ -1,0 +1,28 @@
+<ion-content class="pageMainBg">
+  <div class="dashboardScrn">
+    <div class="screenTitle">
+      <a (click)="back()"><img src="assets/imgs/arrowBack.png" alt="Image"></a>
+      CAPTURE PHOTO
+    </div>
+
+    <a (click)="takephoto()" class="btn-addmore">TAKE A PHOTO </a>
+
+    <div class="photoAlbum">
+      <div class="photoWrp" *ngFor="let photo of photos; let id = index" > 
+        <div class="photoHolder">
+          <img [src]="photo['file_uri']" *ngIf="photo" alt="Image" style="width:100%; height:100%;">
+        </div>
+        <div class="dscrptWrp">
+          <input type="text" name="desc" placeholder="Property Description" [(ngModel)]="photo['caption']">
+          <a (click)="deletephoto(id)" >DELETE PHOTO</a>
+          <a (click)="retakephoto(id)" >RETAKE PHOTO</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
+<ion-footer>
+  <button *ngIf="photoIsNotEmpty" (click)="continue()" class="btn">CONTINUE</button> 
+</ion-footer>

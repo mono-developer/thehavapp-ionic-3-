@@ -1,0 +1,25 @@
+<ion-content class="pageMainBg">
+  <div class="dashboardScrn">
+      <div class="screenTitle">
+        <a (click)="back()" ><img src="assets/imgs/arrowBack.png" alt="Image"></a>
+        ADD PHOTOS
+      </div>
+
+      <a (click)="addmore()" class="btn-addmore">BROWSE MORE PHOTOS</a>
+      
+      <div class="photoWrp" *ngFor="let photo of photos; let id = index" > 
+          <div class="photoHolder">
+            <img [src]="photo" *ngIf="photo" alt="Image" >
+          </div>
+          <div class="dscrptWrp">
+            <input type="text" name="desc" placeholder="Property Description">
+            <a (click)="deletephoto(id)" >Delete Photo</a>
+          </div>
+        <div class="clear"></div>
+      </div>
+
+    </div>
+</ion-content>
+<ion-footer>
+  <button (click)="continue()" class="btn">CONTINUE</button>  
+</ion-footer>

@@ -1,0 +1,19 @@
+<ion-content class="pageMainBg">
+  <div class="dashboardScrn">
+    <div class="screenTitle">ADDRESS VERIFICATION</div>
+
+    <div class="homie"><img src="assets/imgs/homie.png" alt="Image"></div>
+
+    <div class="address">
+      <p>Latitude: <span>{{location.lat}}</span></p>
+      <p>Longitude: <span>{{location.lng}}</span></p>
+      <p>Accuracy: <span>{{accuracy}}</span>m</p>
+    </div>
+    <ion-searchbar class="searchbar" #searchbar placeholder="Search Address"></ion-searchbar>
+    <div #map id="map"></div>
+
+  </div>
+</ion-content>
+<ion-footer>
+  <button (click)="verify()" class="btn">Verify</button>  
+</ion-footer>
